@@ -10,3 +10,16 @@ Sat 09 Sep 2023 01:14:27 AM UTC:
  tests:  1|5
 total_score: 10/70
 3bd5ba3
+Sat 09 Sep 2023 01:14:47 AM UTC: 
+ hashmap.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:54:10: error: redefinition of ‘index’
+   54 |     long index = hash(key, map->capacity);
+      |          ^~~~~
+hashmap.c:43:6: note: previous definition of ‘index’ was here
+   43 | long index = hash(key, map->capacity);
+      |      ^~~~~
+Compilation failed
+123be8d
