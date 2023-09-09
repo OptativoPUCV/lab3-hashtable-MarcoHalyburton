@@ -72,3 +72,20 @@ Sat 09 Sep 2023 01:45:15 AM UTC:
  tests:  13|2
 total_score: 50/70
 4d3c127
+Sat 09 Sep 2023 01:46:30 AM UTC: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:112:20: error: expected ‘;’ before ‘return’
+  112 |   map->current = -1
+      |                    ^
+      |                    ;
+  113 |     return NULL;
+      |     ~~~~~~          
+hashmap.c:114:1: error: control reaches end of non-void function [-Werror=return-type]
+  114 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+8d08e68
