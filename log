@@ -35,3 +35,16 @@ Sat 09 Sep 2023 01:18:02 AM UTC:
  tests:  5|4
 total_score: 30/70
 4b1ddf2
+Sat 09 Sep 2023 01:24:04 AM UTC: 
+ hashmap.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:90:33: error: expected ‘;’ before ‘return’
+   90 |             map->current = index
+      |                                 ^
+      |                                 ;
+   91 |             return map->buckets[index];
+      |             ~~~~~~               
+Compilation failed
+2390684
